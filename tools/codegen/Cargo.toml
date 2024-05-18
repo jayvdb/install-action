@@ -1,6 +1,7 @@
 [package]
 name = "install-action-internal-codegen"
 edition = "2021"
+default-run = "generate-manifest"
 
 [dependencies]
 anyhow = "1"
@@ -19,3 +20,9 @@ ureq = { version = "2", features = ["json"] }
 
 [lints]
 workspace = true
+
+[[bin]]
+bench = false
+name = "generate-manifest"
+path = "src/main.rs"
+test = false
