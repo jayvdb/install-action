@@ -3,6 +3,8 @@
 set -eEuo pipefail
 IFS=$'\n\t'
 
+set -x
+
 rx() {
     local cmd="$1"
     shift
